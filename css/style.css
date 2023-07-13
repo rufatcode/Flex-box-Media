@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 94%;
+    position: fixed;
+    left: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+li,a{
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+header .social-media ul{
+    display: flex;
+}
+header .social-media ul li{
+    margin-left: 15px;
+    font-size: 14px;
+    color: #535353;
+}
+header .social-media ul li a{
+    color: #535353;
+}
+header .social-media ul li a:hover{
+    color: #07a3cc;
+}
+header .nav nav ul{
+    display: flex;
+}
+header .nav nav ul>li{
+    margin-right: 30px;
+    font-size: 13px;
+}
+header .nav nav a{
+    color: #161616;
+}
+header .nav nav a:hover{
+    color: #07a3cc;
+}
+header .nav nav ul>li ul{
+    display: none;
+} 
+header .nav nav i{
+    font-size: 10px;
+    margin-left: 8px;
+}
+header .search ul{
+    display: flex;
+    justify-content: space-between;
+}
+header .search ul li input{
+    border: 0;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    outline: none;
+}
+header .search ul i{
+    font-size: 13px;
+}
+header .search ul sup{
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    padding-left: 4px;
+    border-radius: 50%;
+    background-color: #318892;
+    color: white;
+    position: relative;
+    top: -5px;
+    left: -3px;
+}
+header .search ul .purchase{
+    border: 1px solid white;
+    border-left-color: rgba(0, 0, 0, 0.511);
+}
