@@ -143,6 +143,78 @@ header .nav nav ul>li .first>li:hover .second{
 #fashion .icon{
     margin-left: -150px;
 }
+#lifestyle{
+    position: relative;
+}
+#lifestyle>ul>li{
+    border-bottom: 0;
+    text-align: center;
+}
+#lifestyle ul li img{
+    cursor: pointer;
+}
+#lifestyle ul li h2{
+    margin-top: 1rem;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #535353;
+    cursor: pointer;
+}
+#lifestyle ul li h2:hover{
+    opacity: 0.8;
+}
+#lifestyle ul li img:hover{
+    opacity: 0.8;
+}
+#lifestyle ul li p{
+    color: #606060;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: inherit;
+}
+#lifestyle:hover .menu{
+    width: 1140px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: -800%;
+    border-left: 1px solid rgba(0, 0, 0, 0.061);
+    border-right: 1px solid rgba(0, 0, 0, 0.061);
+    padding-right: 2rem;
+}
+#lifestyle:hover .menu ul{
+    display: block;
+    position: static;
+    text-align: start;
+    border-left: 0;
+    border-bottom: 0;
+    height: 108%;
+    margin-top: -12px;
+    padding-top: 10px;
+}
+#lifestyle .menu ul li{
+    width: 70%;
+    margin-left: 40px;
+    padding-left: 0;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+#lifestyle ul i{
+    position: static;
+    color: rgba(0, 0, 0, 0.219);
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 40px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#lifestyle .icon{
+    margin-left: -150px;
+}
 header .nav nav ul li .second>li:hover .third{
     display: block;
     position: absolute;
