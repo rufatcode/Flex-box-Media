@@ -78,13 +78,76 @@ header .nav nav ul>li ul:last-child{
 }
 header .nav nav ul>li:hover .first{
     display: block;
+    z-index: 1;
 }
 header .nav nav ul>li .first>li:hover .second{
     display: block;
     position: absolute;
-    left: 98%;
+    left: 100%;
     top: -1px;
-    border-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.061);
+    border-bottom: 0;
+}
+#fashion{
+    position: relative;
+}
+#fashion ul li{
+    border-bottom: 0;
+    text-align: center;
+}
+#fashion ul li img{
+    cursor: pointer;
+}
+#fashion ul li h2{
+    margin-top: 1rem;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #535353;
+    cursor: pointer;
+}
+#fashion ul li h2:hover{
+    opacity: 0.8;
+}
+#fashion ul li img:hover{
+    opacity: 0.8;
+}
+#fashion ul li p{
+    color: #606060;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: inherit;
+}
+#fashion:hover ul{
+    width: 1140px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: -800%;
+    border-left: 1px solid rgba(0, 0, 0, 0.061);
+    border-right: 1px solid rgba(0, 0, 0, 0.061);
+    padding-right: 2rem;
+}
+#fashion ul i{
+    position: static;
+    color: rgba(0, 0, 0, 0.219);
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 40px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#fashion .icon{
+    margin-left: -150px;
+}
+header .nav nav ul li .second>li:hover .third{
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: -1px;
     border-top: 1px solid rgba(0, 0, 0, 0.061);
     border-bottom: 0;
 }
