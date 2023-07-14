@@ -267,7 +267,106 @@ header .search ul .horizontal-line{
 }
 #cheerup .head{
     width: 200px;
-    height: 200px;
+    height: 58px;
     background-image: url('../img/logo.webp');
+    background-size: 100%;
+    margin: 2rem auto;
+    font-size: 30rem;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+#cheerup .container {
+    position: relative;
+    width: 100%;
+}
+#cheerup .container .images{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#cheerup .container .images .first{
+    width: 33%;
+    height: 500px;
+    background-image: url('../img/cheerup1.jpeg');
     background-size: cover;
+}
+#cheerup .container .images .second{
+    width: 33%;
+    height: 500px;
+    background-image: url('../img/cheerup2.jpeg');
+    background-size: cover;
+}
+#cheerup .container .images .last{
+    width: 33%;
+    height: 500px;
+    background-image: url('../img/cheerup3.jpeg');
+    background-size: cover;
+}
+#cheerup .container .images div div{
+    width: 96%;
+    height: 96%;
+    margin: 2% auto;
+    background-color: rgba(0, 0, 0, 0.359);
+}
+#cheerup .container .content{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    top: 40%;
+    left: 10%;
+}
+#cheerup .container .content .left,.right{
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    padding-top: 5px;
+}
+#cheerup .container .content .left:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#cheerup .container .content .right:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#cheerup .container .content .midle h3{
+    font-size: 10px;
+    font-weight: 600;
+    color: #161616;
+    width: 80px;
+    height: 16px;
+    padding-top: 2px;
+    margin: 1rem auto;
+    background-color: white;
+    cursor: pointer;
+}
+#cheerup .container .content .midle h2{
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+#cheerup .container .content .midle p{
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+#cheerup .container .content .midle a{
+    color: white;
+    border: 1px solid white;
+    display: block;
+    width: 120px;
+    height: 34px;
+    padding-top: 5px;
+    margin: 0px auto;
+}
+#cheerup .container .content .midle a:hover{
+    background-color: white;
+    color: black;
 }
