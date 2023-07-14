@@ -261,3 +261,13 @@ header .search ul .horizontal-line{
     top: -15px;
     left: -20px;
 }
+#cheerup{
+    width: 100%;
+    padding-top: 5rem;
+}
+#cheerup .head{
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/logo.webp');
+    background-size: cover;
+}
