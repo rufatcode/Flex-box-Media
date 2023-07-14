@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 header{
-    width: 94%;
+    width: 100%;
     position: fixed;
-    left: 3%;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.061);
+    height: 50px;
 }
 li,a{
     text-decoration: none;
@@ -27,15 +30,19 @@ header .social-media ul li{
 header .social-media ul li a{
     color: #535353;
 }
-header .social-media ul li a:hover{
+header .social-media ul li :hover{
     color: #07a3cc;
 }
 header .nav nav ul{
     display: flex;
+    position: relative;
 }
-header .nav nav ul>li{
+header .nav nav li{
+    font-size: 12px;
+}
+header .nav nav>ul>li{
     margin-right: 30px;
-    font-size: 13px;
+    height: 60px;
 }
 header .nav nav a{
     color: #161616;
@@ -43,12 +50,48 @@ header .nav nav a{
 header .nav nav a:hover{
     color: #07a3cc;
 }
+header .nav nav ul li:hover i{
+    color: #07a3cc;
+}
 header .nav nav ul>li ul{
     display: none;
+    position: absolute;
+    top: 2.2rem;
+    border: 1px solid  rgba(0, 0, 0, 0.061);
+    border-top: 0;
+    width: 250px;
+    padding-bottom: 1.5rem;
 } 
+header .nav nav ul>li ul i{
+    position: absolute;
+    right: 20px;
+}
+header .nav nav ul>li ul li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.061);
+    padding-left: 1.7rem;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+    position: relative;
+}
+header .nav nav ul>li ul:last-child{
+    padding-bottom: 0px;
+}
+header .nav nav ul>li:hover .first{
+    display: block;
+}
+header .nav nav ul>li .first>li:hover .second{
+    display: block;
+    position: absolute;
+    left: 98%;
+    top: -1px;
+    border-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.061);
+    border-bottom: 0;
+}
 header .nav nav i{
     font-size: 10px;
     margin-left: 8px;
+    color: rgba(0, 0, 0, 0.209);
 }
 header .search ul{
     display: flex;
@@ -75,7 +118,11 @@ header .search ul sup{
     top: -5px;
     left: -3px;
 }
-header .search ul .purchase{
-    border: 1px solid white;
-    border-left-color: rgba(0, 0, 0, 0.511);
+header .search ul .horizontal-line{
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.061);
+    width: 1px;
+    position: relative;
+    top: -15px;
+    left: -20px;
 }
