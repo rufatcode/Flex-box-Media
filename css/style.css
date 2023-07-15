@@ -685,3 +685,151 @@ header .search ul .horizontal-line{
     height: 30px;
     padding-top: 8px;
 }
+#shop{
+    width: 85%;
+    margin: 2rem auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.121);
+}
+#shop .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+#shop .head .left{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+}
+#shop .head .left:first-child{
+    border: 0.5px solid rgba(0, 0, 0, 0.132);
+    width: 45%;
+    height: 4px;
+    border-left: 0;
+    border-right: 0;
+}
+#shop .head .left .horizontal-line{
+    border: .5px solid rgba(0, 0, 0, 0.082);
+    height: 12px;
+    margin-top: -4px;
+    margin-left: 3px;
+}
+#shop .head .right{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 15px;
+}
+#shop .head .right .first{
+    border: 0.5px solid rgba(0, 0, 0, 0.07);
+    width: 100%;
+    height: 4px;
+    border-left: 0;
+    border-right: 0;
+}
+#shop .head .right .horizontal-line{
+    border: .5px solid rgba(0, 0, 0, 0.09);
+    height: 12px;
+    margin-top: -4px;
+}
+#shop .head .midle{
+    width: 17%;
+}
+#shop .head .midle h2{
+    padding: 0 27px;
+    font-size: 17px;
+    font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+}
+#shop >.content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#shop >.content>div{
+    position: relative;
+}
+#shop >.content>div:hover .icon{
+    display: block;
+}
+#shop >.content>div .icon{
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+#shop >.content>div .icon span{
+    display: inline-block;
+    margin-left: 70%;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #318892;
+    position: absolute;
+}
+#shop >.content>div .icon h3{
+    width: 100%;
+    background-color: #318892;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    margin-top: 88%;
+}
+#shop >.content>div .img {
+    text-align: center;
+}
+#shop >.content>div .img img{
+    cursor: pointer;
+}
+#shop >.content>div .img h2{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: pointer;
+}
+#shop >.content>div .img p{
+    color: #b4b4b4;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .075em;
+    cursor: pointer;
+}
+#shop >.content>div .img span{
+    margin-top: 10px;
+    display: inline-block;
+    color: #318892;
+    font-weight: 600;
+    font-size: 15px;
+}
+#shop .end{
+    margin-top: 3rem;
+    border: 2px solid rgba(0, 0, 0, 0.067);
+    width: 180px;
+    height: 40px;
+    padding-left: 30px;
+    margin: 4rem auto;
+}
+#shop .end:hover{
+    background-color:#318892 ;
+    border: 0;
+    padding-top: 2px;
+}
+#shop .end:hover a{
+    color: white;
+}
+#shop .end a{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .09em;
+    line-height: 34px;
+    color: #161616;
+    cursor: pointer;
+}
