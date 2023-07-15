@@ -13,6 +13,8 @@ header{
     padding-right: 2%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.061);
     height: 50px;
+    z-index: 1000;
+    background-color: white;
 }
 li,a{
     text-decoration: none;
@@ -61,6 +63,7 @@ header .nav nav ul>li ul{
     border-top: 0;
     width: 250px;
     padding-bottom: 1.5rem;
+    background-color: white;
 } 
 header .nav nav ul>li ul i{
     position: absolute;
@@ -265,7 +268,7 @@ header .search ul .horizontal-line{
     width: 100%;
     padding-top: 5rem;
 }
-#cheerup .head{
+#cheerup>.head{
     width: 200px;
     height: 58px;
     background-image: url('../img/logo.webp');
@@ -369,4 +372,316 @@ header .search ul .horizontal-line{
 #cheerup .container .content .midle a:hover{
     background-color: white;
     color: black;
+}
+#cheerup .popular {
+    width: 80%;
+    margin: 2rem auto;
+}
+#cheerup .popular .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#cheerup .popular .head .left{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+}
+#cheerup .popular .head .left:first-child{
+    border: 0.5px solid rgba(0, 0, 0, 0.132);
+    width: 45%;
+    height: 4px;
+    border-left: 0;
+    border-right: 0;
+}
+#cheerup .popular .head .left .horizontal-line{
+    border: .5px solid rgba(0, 0, 0, 0.082);
+    height: 12px;
+    margin-top: -4px;
+    margin-left: 3px;
+}
+#cheerup .popular .head .right{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 15px;
+}
+#cheerup .popular .head .right .first{
+    border: 0.5px solid rgba(0, 0, 0, 0.07);
+    width: 100%;
+    height: 4px;
+    border-left: 0;
+    border-right: 0;
+}
+#cheerup .popular .head .right .horizontal-line{
+    border: .5px solid rgba(0, 0, 0, 0.09);
+    height: 12px;
+    margin-top: -4px;
+}
+#cheerup .popular .head .midle{
+    width: 17%;
+}
+#cheerup .popular .head .midle h2{
+    padding: 0 27px;
+    font-size: 17px;
+    font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+}
+#cheerup .popular .content{
+    padding-bottom: 4rem;
+    position: relative;
+    margin-top: 3rem;
+    transition: 1s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.127);
+}
+#cheerup .popular .content .icon{
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+#cheerup .popular .content:hover .icon{
+    display: block;
+}
+#cheerup .popular .content .icon .left{
+    color: rgba(0, 0, 0, 0.146);
+    position: absolute;
+    left: -50px;
+    top: 85px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+}
+#cheerup .popular .content .icon .right{
+    color: rgba(0, 0, 0, 0.206);
+    border: 0;
+    position: absolute;
+    top: 85px;
+    right: -50px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+#cheerup .popular .content .img{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#cheerup .popular .content .img div img{
+    transition: 0.5s;
+    cursor: pointer;
+}
+#cheerup .popular .content .img div img:hover{
+    opacity: 0.8;
+}
+#cheerup .popular .content .img div p{
+    letter-spacing: .09em;
+    color: #318892;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 11px;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    transition: .5s;
+}
+#cheerup .popular .content .img div p:hover{
+    color: #318892ae;
+}
+#cheerup .popular .content .img div h3{
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 1rem;
+    transition: .3s;
+}
+#cheerup .popular .content .img div h3:hover{
+    color: rgba(0, 0, 0, 0.686);
+}
+#cheerup .popular .content .img div span{
+    font-weight: 500;
+    letter-spacing: .075em;
+    font-family: inherit;
+    font-size: 10px;
+    color: #16161644;
+    cursor: pointer;
+}
+#main{
+    width: 85%;
+    margin: 4rem auto;
+}
+#main .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+#main .container .left{
+    width: 68%;
+    text-align: center;
+}
+#main .container .left h4{
+    color: #318892;
+    letter-spacing: .09em;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#main .container .left h4:hover{
+    color: #318892c0;
+}
+#main .container .left h4 span{
+    font-weight: 500;
+    letter-spacing: .075em;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 10px;
+    color: #b4b4b4;
+}
+#main .container .left h2{
+    color: #161616;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.35;
+    transition: .5s;
+}
+#main .container .left h2:hover{
+    color: #161616ac;
+}
+#main .container .left hr{
+    width: 40px;
+    margin: 1rem auto;
+}
+#main .container .left p{
+    margin-bottom: 26px;
+    font-size: 16px;
+    color: #606060;
+    text-align: justify;
+}
+#main .container .left .end{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+#main .container .left .end div{
+    width: 34%;
+    height: 40px;
+    border: 0.5px solid rgba(0, 0, 0, 0.163);
+    text-align: center;
+    padding-top: 10px;
+}
+#main .container .left .end div span{
+    color: #535353;
+    cursor: pointer;
+    font-size: 13px;
+}
+#main .container .left .end div span span{
+    color: #b4b4b4;
+}
+#main .container .left .end div span:hover{
+    color: #53535398;
+}
+#main .container .left .end div i{
+    font-size: 12px;
+    font-weight: 500;
+    color: #535353;
+    cursor: pointer;
+    
+    margin-right: 10px;
+}
+#main .container .left .end div i:hover{
+    color: #07a3cc;
+}#main .container .left .end div i:hover .like-count{
+    display: inline-block;
+    color: #07a3cc;
+}
+#main .container .left .end div .like-count{
+    color: #07a3cc;
+    background-color: rgba(0, 0, 0, 0.233);
+    font-size: 10px;
+    display: none;
+}
+
+#main .container .left img{
+    width: 770px;
+    height: 514;
+    cursor: pointer;
+    transition: .5s;
+}
+#main .container .left img:hover{
+    opacity: 0.8;
+}
+#main .container .right{
+    width: 30%;
+    text-align: center;
+}
+#main .container .right>h2{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #161616;
+    border: 0.5px solid rgba(0, 0, 0, 0.134);
+    padding-top: 10px;
+    margin-top: -8px;
+    margin-bottom: 2rem;
+}
+#main .container .right>p{
+    color: #606060;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    
+}
+#main .container .right>a{
+    text-decoration: none;
+    color: #318892;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .09em;
+    cursor: pointer;
+    transition: .4s;
+}
+#main .container .right>a:hover{
+    color: #318892ae;
+}
+#main .container .right>hr{
+    width: 80px;
+    margin: 5px auto;
+    color: rgba(0, 0, 0, 0.005);
+    opacity: 0.4;
+    margin-bottom: 2rem;
+}
+#main .container .right .img{
+    position: relative;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+#main .container .right .img .name{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+#main .container .right .img .name h3{
+    width: 100px;
+    background-color: white;
+    color: #535353;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 30px;
+    padding-top: 8px;
 }
