@@ -100,6 +100,7 @@ header .nav nav ul>li .first>li:hover .second{
 }
 #fashion ul li img{
     cursor: pointer;
+    overflow: hidden;
 }
 #fashion ul li h2{
     margin-top: 1rem;
@@ -155,6 +156,7 @@ header .nav nav ul>li .first>li:hover .second{
 }
 #lifestyle ul li img{
     cursor: pointer;
+    overflow: hidden;
 }
 #lifestyle ul li h2{
     margin-top: 1rem;
@@ -475,6 +477,7 @@ header .search ul .horizontal-line{
 #cheerup .popular .content .img div img{
     transition: 0.5s;
     cursor: pointer;
+    overflow: hidden;
 }
 #cheerup .popular .content .img div img:hover{
     opacity: 0.8;
@@ -618,6 +621,7 @@ header .search ul .horizontal-line{
     height: 514;
     cursor: pointer;
     transition: .5s;
+    overflow: hidden;
 }
 #main .container .left img:hover{
     opacity: 0.8;
@@ -785,6 +789,7 @@ header .search ul .horizontal-line{
 }
 #shop >.content>div .img img{
     cursor: pointer;
+    overflow: hidden;
 }
 #shop >.content>div .img h2{
     margin-top: 20px;
@@ -856,6 +861,7 @@ header .search ul .horizontal-line{
     height: 278px;
     transition: .5s;
     cursor: pointer;
+    overflow: hidden;
 }
 #catalog>.left-content>div>div img:hover{
     opacity: 0.8;
@@ -1017,6 +1023,7 @@ header .search ul .horizontal-line{
     text-align: center;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
+    margin-bottom: 2rem;
 }
 #catalog>.right-content>.contact>h3{
     font-size: 12px;
@@ -1051,4 +1058,94 @@ header .search ul .horizontal-line{
     font-size: 11px;
     cursor: pointer;
     letter-spacing: 1px;
+}
+#catalog>.right-content>.img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#catalog>.right-content>.img>div>img{
+    width: 87px;
+    height: 67px;
+    display: inline-block;
+    transition: .4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+#catalog>.right-content>.img>div>img:hover{
+    opacity: 0.8;
+}
+#catalog>.right-content>.img>div>div{
+    display: inline-block;
+    width: 65%;
+    margin-left: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+#catalog>.right-content>.img>div>div>span{
+    color: #318892;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 10px;
+    margin-bottom: 0.7rem;
+    display: inline-block;
+}
+#catalog>.right-content>.img>div>div>span:hover{
+    opacity: 0.8;
+}
+#catalog>.right-content>.img>div>div>span>span{
+    font-weight: 500;
+    letter-spacing: .075em;
+    color: #b4b4b4;
+}
+#catalog>.right-content>.img>div>div>h2{
+    color: #161616;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0.7rem;
+}
+#catalog>.right-content>.img>div>div>h2:hover{
+    opacity: 0.8;
+}
+#catalog>.right-content>.img>div>div>p{
+    font-size: 14px;
+    color: #b4b4b4;
+    line-height: 1.1;
+}
+#catalog>.right-content>.catagory{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+#catalog>.right-content>.catagory>img{
+    width: 108px;
+    height: 108px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .4s;
+}
+#catalog>.right-content>.catagory>img:hover{
+    opacity: 0.8;
+}
+#catalog>.right-content>.menu>div{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.099);
+    margin-top: 2rem;
+    padding-bottom: 15px;
+}
+#catalog>.right-content>.menu>div>i{
+    font-size: 7px;
+    color:  #07a3cc;
+    cursor: pointer;
+}
+#catalog>.right-content>.menu>div>h3{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    color: #535353;
+    font-weight: 300;
+    margin-left: 10px;
+    width: 55px;
+}
+#catalog>.right-content>.menu>div>span{
+    margin-left: 68%;
+    font-size: 13px;
+    color: #c3c3c3;
 }
