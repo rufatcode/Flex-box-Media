@@ -1121,6 +1121,7 @@ header .search ul .horizontal-line{
     overflow: hidden;
     cursor: pointer;
     transition: .4s;
+    overflow: hidden;
 }
 #catalog>.right-content>.catagory>img:hover{
     opacity: 0.8;
@@ -1148,4 +1149,148 @@ header .search ul .horizontal-line{
     margin-left: 68%;
     font-size: 13px;
     color: #c3c3c3;
+}
+footer{
+    background-color: #49494916;
+    padding-top: 2rem;
+    width: 100%;
+}
+footer>.up{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 3rem;
+}
+footer>.up>div{
+    width: 30.6%;
+}
+footer>.up>div>h2{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 35px;
+    margin-top: 2rem;
+}
+footer>.up>div>hr{
+    color: rgba(0, 0, 0, 0.104);
+    margin-bottom: 3rem;
+    height: 0.5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.105);
+}
+footer>.up>div>div{
+    margin-bottom: 17px;
+}
+footer>.up>div>div>img{
+    width: 87px;
+    height: 67px;
+    cursor: pointer;
+    transition: .4s;
+    overflow: hidden;
+}
+footer>.up>div>div>img:hover{
+    opacity: 0.8;
+}
+footer>.up>div>p{
+    text-align: center;
+    font-size: 14px;
+    color: #606060;
+    margin-top: 1rem;
+    line-height: 25px;
+}
+footer>.up>div>div>div{
+    display: inline-block;
+    width: 66%;
+    margin-left: 1.5rem;
+}
+footer>.up>div>div>div>span{
+    color: #318892;
+    letter-spacing: .09em;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 10px;
+    transition: .3s;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+footer>.up>div>div>div>span:hover{
+    opacity: 0.7;
+}
+footer>.up>div>div>div>span>span{
+    font-weight: 500;
+    letter-spacing: .075em;
+    font-weight: 400;
+    color: #b4b4b4;
+}
+footer>.up>div>div>div>h2{
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 600;
+    transition: .3s;
+}
+footer>.up>div>div>div>h2:hover{
+    opacity: 0.7;
+}
+footer>.up>div>div>div>p{
+    color: #999;
+    font-size: 14px;
+    line-height: 1.1;
+    margin-top: .5rem;
+}
+footer>.down{
+    position: relative;
+    width: 100%;
+}
+footer>.down>.logo{
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 120px;
+    height: 35px;
+    color: #535353;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+    top: 38%;
+    left: 45%;
+}
+footer>.down>.logo:hover{
+    color: #535353ce;
+}
+footer>.down>.images{
+    display: flex;
+
+}
+footer>.down>.images>img{
+    width: 14.3%;
+    height: 14.3%;
+    cursor: pointer;
+    transition: .3s;
+}
+footer>.down>.images>img:hover{
+    opacity: .8;
+
+}
+footer>.down>.end{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2rem auto;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+footer>.down>.end>a{
+    font-size: 13px;
+    color: #b4b4b4;
+    line-height: 1.8666;
+}
+footer>.down>.end>a>i{
+    text-transform: lowercase;
+}
+footer>.down>.end>#go-to-top{
+    cursor: pointer;
+}
+footer>.down>.end>#go-to-top:hover{
+    color: black;
 }
