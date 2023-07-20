@@ -266,6 +266,18 @@ header .search ul .horizontal-line{
     top: -15px;
     left: -20px;
 }
+@media only screen and (max-width:960px) {
+    header .social-media{
+        display: none;
+    }
+    header .nav{
+        display: none;
+    }
+    header .bar{
+        display: block;
+        margin-left: 5%;
+    }
+}
 #cheerup{
     width: 100%;
     padding-top: 5rem;
@@ -474,10 +486,14 @@ header .search ul .horizontal-line{
     justify-content: space-between;
     text-align: center;
 }
+#cheerup .popular .content .img>div{
+    width: 24%;
+}
 #cheerup .popular .content .img div img{
     transition: 0.5s;
     cursor: pointer;
     overflow: hidden;
+    width: 80%;
 }
 #cheerup .popular .content .img div img:hover{
     opacity: 0.8;
@@ -516,6 +532,50 @@ header .search ul .horizontal-line{
     color: #16161644;
     cursor: pointer;
 }
+
+@media only screen and (max-width:450px){
+    #cheerup .popular .content .img .second, .third, .forth{
+        display: none;
+    }
+    #cheerup .popular .content .img>div{
+        width: 100%;
+        margin-left: 3rem;
+    }
+    #cheerup .popular .content .img div img{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:730px) {
+    #cheerup .popular .content .img .third, .forth{
+        display: none;
+    }
+    #cheerup .popular .content .img>div{
+        width: 50%;
+    }
+}
+@media only screen and (min-width:730px) and (max-width:960px){
+    #cheerup .popular .content .img .third{
+        display: block;
+    }
+    #cheerup .popular .content .img .forth{
+        display: none;
+    }
+    #cheerup .popular .content .img>div{
+        width: 33%;
+    }
+}
+@media only screen and (max-width:960px) {
+    #cheerup .container .images .first{
+        display: none;
+    }
+    #cheerup .container .images .second{
+        width: 100%;
+        margin-left: 3rem;
+    }
+    #cheerup .container .images .last{
+        display: none;
+    }
+}
 #main{
     width: 85%;
     margin: 4rem auto;
@@ -526,7 +586,7 @@ header .search ul .horizontal-line{
 
 }
 #main .container .left{
-    width: 68%;
+    width: 63%;
     text-align: center;
 }
 #main .container .left h4{
@@ -617,7 +677,7 @@ header .search ul .horizontal-line{
 }
 
 #main .container .left img{
-    width: 770px;
+    width: 100%;
     height: 514;
     cursor: pointer;
     transition: .5s;
@@ -679,6 +739,9 @@ header .search ul .horizontal-line{
     top: 50px;
     left: 120px;
 }
+#main .container .right .img img{
+    width: 100%;
+}
 #main .container .right .img .name h3{
     width: 100px;
     background-color: white;
@@ -688,6 +751,35 @@ header .search ul .horizontal-line{
     cursor: pointer;
     height: 30px;
     padding-top: 8px;
+}
+@media only screen and (max-width:1300px) {
+    #main .container .right{
+        display: none;
+    }
+    #main .container .left{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:310px) and (max-width:760px) {
+    #main .container .left .end>.first{
+        display: none;
+    }
+    #main .container .left .end>div{
+        width: 50%;
+    }
+    
+}
+@media only screen and (max-width:310px){
+    #main .container .left .end{
+        flex-wrap: wrap;
+    }
+    #main .container .left .end>.first{
+        display: none;
+    }
+    #main .container .left .end>div{
+        width: 70%;
+        border: 0;
+    }
 }
 #shop{
     width: 85%;
@@ -790,6 +882,7 @@ header .search ul .horizontal-line{
 #shop >.content>div .img img{
     cursor: pointer;
     overflow: hidden;
+    width: 100%;
 }
 #shop >.content>div .img h2{
     margin-top: 20px;
@@ -837,6 +930,14 @@ header .search ul .horizontal-line{
     line-height: 34px;
     color: #161616;
     cursor: pointer;
+}
+@media only screen and (max-width:930px) {
+    #shop >.content{
+        flex-wrap: wrap;
+    }
+    #shop >.content>div{
+        width: 48%;
+    }
 }
 #catalog{
     width: 85%;
@@ -1150,6 +1251,30 @@ header .search ul .horizontal-line{
     font-size: 13px;
     color: #c3c3c3;
 }
+@media only screen and (min-width:780px) and (max-width:1167px) {
+    #catalog>.right-content{
+        display: none;
+    }
+    #catalog>.left-content{
+        width: 100%;
+    }
+    #catalog>.left-content>div>div{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:780px){
+    #catalog>.right-content{
+        display: none;
+        width: 100%;
+    }
+    #catalog>.left-content>div{
+        flex-wrap: wrap;
+    }
+    #catalog>.left-content>div>div{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
 footer{
     background-color: #49494916;
     padding-top: 2rem;
@@ -1260,7 +1385,7 @@ footer>.down>.logo:hover{
 }
 footer>.down>.images{
     display: flex;
-
+    justify-content: space-evenly;
 }
 footer>.down>.images>img{
     width: 14.3%;
@@ -1293,4 +1418,40 @@ footer>.down>.end>#go-to-top{
 }
 footer>.down>.end>#go-to-top:hover{
     color: black;
+}
+@media only screen and (max-width:940px) {
+    footer>.up{
+        flex-wrap: wrap;
+    }
+    footer>.up>div{
+        width: 100%;
+        overflow: hidden;
+    }
+    footer>.up>div img{
+        width: 100%;
+        height: 350px;
+    }
+    footer>.down>.images .seventh, .sixth{
+        display: none;
+    }
+   
+}
+@media only screen and(max-width:526px){
+    footer>.down>.images {
+        flex-wrap: wrap;
+    }
+    footer>.down>.images .seventh{
+        display: none;
+    }
+    footer>.down>.images img{
+        width: 33%;
+    }
+}
+@media only screen and(min-width:526px) and (max-width:940px){
+    footer>.down>.images img{
+        width: 20%;
+    }
+    footer>.up .sixth, .seventh{
+        display: none;
+    }
 }
