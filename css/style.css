@@ -266,6 +266,9 @@ header .search ul .horizontal-line{
     top: -15px;
     left: -20px;
 }
+header .bar{
+    display: none;
+}
 @media only screen and (max-width:960px) {
     header .social-media{
         display: none;
