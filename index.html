@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cheerup</title>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -13,6 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
   </head>
   <body>
     <header>
@@ -499,7 +502,7 @@
         </nav>
       </div>
       <div class="search">
-        <ul>
+        <ul id="searchList">
           <li><i class="fa-solid fa-magnifying-glass"></i></li>
           <li>
             <input
@@ -510,7 +513,7 @@
             />
           </li>
           <li class="horizontal-line"></li>
-          <li style="cursor: pointer;" class="purchase">
+          <li style="cursor: pointer" class="purchase">
             <i class="fa-solid fa-cart-shopping"></i><sup>o</sup>
           </li>
         </ul>
@@ -520,24 +523,30 @@
       <div class="head"></div>
       <div class="container">
         <div class="content">
-          <div class="left"><i class="fa-solid fa-chevron-left"></i></div>
+          <!-- <div class="left"><i class="fa-solid fa-chevron-left"></i></div> -->
           <div class="midle">
             <h3>LIFESTYLE</h3>
             <h2>SMARTER THAN PHONE</h2>
             <p>More off this less hello...</p>
             <a href="">Read More</a>
           </div>
-          <div class="right"><i class="fa-solid fa-chevron-right"></i></div>
+          <!-- <div class="right"><i class="fa-solid fa-chevron-right"></i></div> -->
         </div>
-        <div class="images">
-          <div class="first">
-            <div></div>
+        <div class="images owl-carousel owl-theme">
+          <div class="first item">
+            <div class="demo"></div>
           </div>
-          <div class="second">
-            <div></div>
+          <div class="second item">
+            <div class="demo"></div>
           </div>
-          <div class="last">
-            <div></div>
+          <div class="third item">
+            <div class="demo"></div>
+          </div>
+          <div class="forth item">
+            <div class="demo"></div>
+          </div>
+          <div class="fifth item">
+            <div class="demo"></div>
           </div>
         </div>
       </div>
@@ -560,13 +569,13 @@
           </div>
           <div class="img">
             <div>
-              <img  height="223" src="./img/popular1.jpeg" alt="" />
+              <img height="223" src="./img/popular1.jpeg" alt="" />
               <p>FASHION</p>
               <h3>OUT ON A WINDY DAY</h3>
               <span>14.05.2016</span>
             </div>
             <div class="second">
-              <img  height="223" src="./img/popular2.jpeg" alt="" />
+              <img height="223" src="./img/popular2.jpeg" alt="" />
               <p>TRAVEL</p>
               <h3>RELAX BY THE LAKE</h3>
               <span>14.05.2016</span>
@@ -578,7 +587,7 @@
               <span>14.05.2016</span>
             </div>
             <div class="forth">
-              <img  height="223" src="./img/popular4.jpeg" alt="" />
+              <img height="223" src="./img/popular4.jpeg" alt="" />
               <p>LIFESTYLE</p>
               <h3>EARLY MORNING IN BED</h3>
               <span>14.05.2016</span>
@@ -641,7 +650,7 @@
           </div>
           <div class="img">
             <div class="name"><h3>TRAVEL</h3></div>
-            <img  height="124" src="./img/main5.jpeg" alt="" />
+            <img height="124" src="./img/main5.jpeg" alt="" />
           </div>
         </div>
       </div>
@@ -689,7 +698,7 @@
             </h3>
           </div>
           <div class="img">
-            <img  height="270" src="./img/shop2.jpeg" alt="" />
+            <img height="270" src="./img/shop2.jpeg" alt="" />
             <h2>DENIM BAG</h2>
             <p>ACCESSORIES</p>
             <span>$54</span>
@@ -719,7 +728,7 @@
             </h3>
           </div>
           <div class="img">
-            <img  height="270" src="./img/shop4.jpeg" alt="" />
+            <img height="270" src="./img/shop4.jpeg" alt="" />
             <h2>WOOD HEEL</h2>
             <p>ACCESSORIES</p>
             <span>$67</span>
@@ -969,9 +978,9 @@
         </div>
         <div class="second">
           <h2>LATEST POSTS</h2>
-          <hr>
+          <hr />
           <div>
-            <img src="./img/footer2.jpeg" alt="">
+            <img src="./img/footer2.jpeg" alt="" />
             <div>
               <span>FASHION <span>15.05.2016</span> </span>
               <h2>MY NEW BLOND HAIR</h2>
@@ -979,7 +988,7 @@
             </div>
           </div>
           <div>
-            <img src="./img/footer3.jpeg" alt="">
+            <img src="./img/footer3.jpeg" alt="" />
             <div>
               <span>FASHION <span>15.05.2016</span></span>
               <h2>STILL IN THE BED</h2>
@@ -987,19 +996,19 @@
             </div>
           </div>
           <div>
-            <img src="./img/footer4.jpeg" alt="">
+            <img src="./img/footer4.jpeg" alt="" />
             <div>
               <span>BEAUTY <span>15.05.2016</span></span>
-              <h2>IN A CASUAL OUTFIT </h2>
+              <h2>IN A CASUAL OUTFIT</h2>
               <p>More off this less hello salamander lied...</p>
             </div>
           </div>
         </div>
         <div>
           <h2>TOP RATED PRODUCTS</h2>
-          <hr>
+          <hr />
           <div>
-            <img src="./img/footer5.jpeg" alt="">
+            <img src="./img/footer5.jpeg" alt="" />
             <div>
               <h2>TUNIC DRESS</h2>
               <span>
@@ -1013,14 +1022,14 @@
             </div>
           </div>
           <div>
-            <img src="./img/footer6.jpeg" alt="">
+            <img src="./img/footer6.jpeg" alt="" />
             <div>
               <h2>DENIM BAG</h2>
               <p>$54</p>
             </div>
           </div>
           <div>
-            <img src="./img/footer7.jpeg" alt="">
+            <img src="./img/footer7.jpeg" alt="" />
             <div>
               <h2>SKINNY JEANS</h2>
               <p>$36</p>
@@ -1029,15 +1038,17 @@
         </div>
       </div>
       <div class="down">
-        <div class="logo"><span><i class="fa-brands fa-instagram"></i>Follow Me</span></div>
+        <div class="logo">
+          <span><i class="fa-brands fa-instagram"></i>Follow Me</span>
+        </div>
         <div class="images">
-          <img src="./img/footer-down1.jpg" alt="">
-          <img src="./img/footer-down2.jpg" alt="">
-          <img src="./img/footer-down3.jpg" alt="">
-          <img class="forth" src="./img/footer-down4.jpg" alt="">
-          <img class="fifth" src="./img/footer-down5.jpg" alt="">
-          <img class="sixth" src="./img/footer-down6.jpg" alt="">
-          <img class="seventh" src="./img/footer-down7.jpg" alt="">
+          <img src="./img/footer-down1.jpg" alt="" />
+          <img src="./img/footer-down2.jpg" alt="" />
+          <img src="./img/footer-down3.jpg" alt="" />
+          <img class="forth" src="./img/footer-down4.jpg" alt="" />
+          <img class="fifth" src="./img/footer-down5.jpg" alt="" />
+          <img class="sixth" src="./img/footer-down6.jpg" alt="" />
+          <img class="seventh" src="./img/footer-down7.jpg" alt="" />
         </div>
         <div class="end">
           <a href="">© 2023 ThemeSphere. Designed by ThemeSphere.</a>
@@ -1046,4 +1057,13 @@
       </div>
     </footer>
   </body>
+  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./owlcarousel/owl.carousel.min.js"></script>
+  <script src="./js/script.js"></script>
 </html>

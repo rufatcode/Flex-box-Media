@@ -1,0 +1,35 @@
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1,
+                dots:false
+            },
+            600:{
+                items:1,
+                dots:false
+            },
+            1000:{
+                items:3,
+                dots:false
+            }
+        }
+    })
+  });
+  let input=document.getElementById("search");
+  let searchList=document.getElementById("searchList");
+  input.addEventListener("click",()=>{
+    input.style.width="220px";
+    input.style.marginRight="20px";
+    searchList.style.transform="translateX(-50px)";
+    searchList.style.transition=".4s";
+  });
+input.addEventListener("focusout",()=>{
+    input.style.width="150px";
+    input.style.marginRight="0px";
+    searchList.style.transform="translateX(0px)";
+    searchList.style.transition=".4s";
+})
