@@ -347,6 +347,8 @@ header .bar{
     background-image: url('../img/cheerup1.jpeg');
     background-size: cover;
     padding-top: 2%;
+    cursor: pointer;
+    transition: .2s;
 }
 #cheerup .container .images .second{
     width: 100%;
@@ -354,6 +356,7 @@ header .bar{
     background-image: url('../img/cheerup2.jpeg');
     background-size: cover;
     padding-top: 2%;
+    cursor: pointer;
 }
 #cheerup .container .images .third{
     width: 100%;
@@ -361,6 +364,7 @@ header .bar{
     background-image: url('../img/cheerup3.jpeg');
     background-size: cover;
     padding-top: 2%;
+    cursor: pointer;
 }
 #cheerup .container .images .forth{
     width: 100%;
@@ -368,6 +372,7 @@ header .bar{
     background-image: url('../img/cheerup4.jpeg');
     background-size: cover;
     padding-top: 2%;
+    cursor: pointer;
 }
 #cheerup .container .images .fifth{
     width: 100%;
@@ -375,6 +380,10 @@ header .bar{
     background-image: url('../img/cheerup5.jpeg');
     background-size: cover;
     padding-top: 2%;
+    cursor: pointer;
+}
+#cheerup .container .images >div>div>div>div:hover{
+    opacity: 0.9;
 }
 #cheerup .container .images div div{
     width: 96%;
